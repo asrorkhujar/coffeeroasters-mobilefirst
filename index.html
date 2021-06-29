@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -12,14 +12,15 @@
 
 </head>
 
-<body>
-  <div class="container">
+<body class="page__body">
+  <div class="page__container container">
+    <!-- SITE-HEADER -->
     <header class="site-header">
 <a href="index.html" class="site-header__logo">
   <img class="site-header__logo-img" src="./img/logo-dark.svg" alt="logo of Coffee roasters" width="163" height="18">
 </a>
 <button class="site-header__toggler js-side-header-toggler" type="button" aria-label="Site navigation toggler"></button>
-
+<!-- NAV -->
 <nav class="site-header__sitenav sitenav">
   <ul class="sitenav-list">
     <li class="sitenav-item">
@@ -34,16 +35,24 @@
   </ul>
 </nav>
     </header>
+
+<!-- SITE-CONTENT -->
+    <main class="site-main">
+<div class="hero">
+  <div class="hero__content">
+    <h1 class="hero__heading">Great coffee made simple.</h1>
+    <p class="hero__text">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+    <a class="button" href="#">Create your plan</a>
   </div>
+</div>
 
 
-<main class="site-main">
-<section></section>
+    </main>
 
+    <footer class="site-footer">
 
-</main>
-
-
+    </footer>
+  </div>
 <script src="./js/main.js"></script>
 </body>
 
