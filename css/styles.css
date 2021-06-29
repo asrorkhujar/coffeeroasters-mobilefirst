@@ -1,0 +1,149 @@
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Regular.woff2") format("woff2"),
+  url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/Fraunces9pt-Black.woff2") format("woff2"),
+  url("../fonts/Fraunces9pt-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: url("../fonts/Barlow-Bold.woff2") format("woff2"),
+  url("../fonts/Barlow-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+:root{
+--color-white:#fff;
+--dark-cyan:#0E8784;
+--dark-grey-blue:#333D4B;
+--pale-orange:#FDD6BA;
+--light-cream:#FEFCF7;
+--grey:#83888F;
+
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family:"Barlow", "Arial", sans-serif;
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: var(--dark-grey-blue);
+  background-color: #FEFCF7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+padding-top: 31px;
+padding-bottom: 40px;
+}
+.site-header__logo {
+  text-decoration: none;
+}
+.site-header__logo-img {
+  display: block;
+}
+.site-header__toggler {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/hamburger-menu-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+background-size: contain;
+cursor: pointer;
+}
+
+.site-header__sitenav{
+  display: none;
+}
+.site-header--open .site-header__sitenav{
+  display: block;
+}
+
+/* SITENAV */
+.sitenav {
+  position: absolute;
+  z-index: 1;
+  top:100%;
+  left: -24px;
+right: -24px;
+padding-left: 24px;
+padding-right: 24px;
+}
+.sitenav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.sitenav-item {
+}
+.sitenav-link {
+}
