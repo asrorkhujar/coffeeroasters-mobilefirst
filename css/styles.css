@@ -609,7 +609,6 @@ margin-bottom: 13px;
     margin-bottom: 48px;
   }
 
-  .commitment__inner {}
 
   .commitment__heading {
     margin-top: 0;
@@ -767,6 +766,9 @@ only screen and (                min-resolution: 2dppx) {
   .hero{
     background-image: url("../img/hero-mobile-bg@2x.jpg");
   }
+  .about{
+    background-image: url("../img/about-hero-bg-mobile@2x.jpg");
+    }
 
 }
 
@@ -1068,7 +1070,104 @@ justify-content: center;
   margin-right: 32px;
 }
 
+ /* ABOUT SECTION TABLET  */
+ .about{
+  padding: 120px 60px;
+  background-image: url("../img/about-hero-tablet-g.jpg");
+}
 
+.about__inner{
+  text-align: left;
+  max-width: 400px;
+}
+
+/* COMMITMENT TABLET */
+.commitment{
+  padding-top: 144px;
+  padding-bottom: 304px;
+}
+
+.commitment__wrapper{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.commitment__img{
+  width: 280px;
+  height: 470px;
+  flex-shrink: 0;
+  margin-right: 70px;
+  margin-bottom: 0;
+}
+.commitment__inner{
+  width: 340px;
+
+}
+
+.commitment__heading{
+  margin-bottom: 30px;
+}
+
+
+/* QUALITY TABLET */
+.quality{
+  padding: 224px 74px 67px;
+}
+
+ .quality::before{
+   left: 57px;
+   background-image: url("../img/about-quality-tablet.jpg");
+   width: 573px;
+   height: 320px;
+
+ }
+
+
+ .quality__heading{
+   font-size: 32px;
+   line-height: 48px;
+ }
+ .footer__item{
+   text-align: left;
+ }
+ .footer__item:not(:last-child){
+   margin-right: 10px;
+ }
+
+ /* OFFICE */
+ .offices {
+   padding-top: 144px;
+   padding-bottom: 144px;
+ }
+
+ .offices__heading {
+   margin-bottom: 72px;
+   text-align: left;
+ }
+
+ .offices__list {
+   display: flex;
+ }
+
+ .item-office{
+   align-items: start;
+   width: 220px;
+ }
+
+ .item-office:not(:last-child){
+   margin-right: 10px;
+   margin-bottom: 0;
+ }
+
+ .item-office__heading{
+   font-size: 24px;
+   line-height: 36px;
+ }
+
+ .item-office__address{
+   text-align: left;
+ }
 
 
   @media
@@ -1082,7 +1181,13 @@ justify-content: center;
     .hero{
       background-image: url("../img/hero-tablet-bg@2x.jpg");
     }
+    .about{
+      background-image: url("../img/about-hero-tablet-g@2x.jpg");
+    }
+    .quality::before{
+      background-image: url("../img/about-quality-tablet@2x.jpg");
 
+    }
   }
 }
 
@@ -1287,5 +1392,113 @@ align-items: center;
  }
 
 
+  /* ABOUT-SECTION DESKTOP*/
+  .about {
+    padding: 120px 60px;
+    background-image: url("../img/about-hero-desktop.jpg");
+  }
+
+  .about__inner {
+    text-align: left;
+    max-width: 445px;
+  }
+
+  .about__heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .about__info {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* COMMITMENT DESKTOP */
+  .commitment {
+    padding: 168px 87px 256px;
+  }
+
+  .commitment__img{
+    margin-right: 125px;
+    width: 445px;
+    height: 520px;
+  }
+
+
+  .commitment__inner{
+    width: 540px;
+  }
+
+  .commitment__heading{
+    margin-bottom: 32px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .commitment__info{
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* QUALITY */
+
+  .quality{
+   padding: 88px 85px 176px;
+  }
+
+  .quality::before{
+    background-image: url("../img/about-quality-desktop.jpg");
+    width: 445px;
+    height: 474px;
+    left: auto;
+    right: 85px;
+    top: -20%;
+    transform: translateY(0);
+  }
+
+  .quality__wrapper{
+    width: 540px;
+    text-align: left;
+  }
+
+  /* offices */
+
+  .offices{
+   padding-top: 168px;
+   padding-left: 135px;
+   padding-bottom: 168px;
+  }
+
+  .offices__item{
+    width: 285px;
+  }
+
+  .offices__item:not(:last-child){
+    margin-right: 95px;
+  }
+
+  .item-office__heading{
+   font-size: 32px;
+   line-height: 36px;
+  }
+
+
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+
+      .hero{
+        background-image: url("../img/hero-desktop-bg@2x.jpg");
+    }
+    .about {
+      background-image: url("../img/about-hero-desktop@2x.jpg");
+    }
+
+  }
 
 }
